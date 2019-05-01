@@ -23,6 +23,9 @@ for i in range(0,50):
 while True:
     while (serialArduino.inWaiting()==0):
         pass
+
+   	serialArduino.write("teste")
+    time.sleep(1)
     valueRead = serialArduino.readline()
 
     
